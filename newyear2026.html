@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy New Year 2026 🎉</title>
+
+<!-- WhatsApp Preview -->
+<meta property="og:title" content="Happy New Year 2026 🎉">
+<meta property="og:description" content="Wishing you happiness, success, and joy in 2026 ✨">
+<meta property="og:type" content="website">
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.card {
+    padding: 30px 20px;
+    max-width: 320px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+.year {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.tap {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+/* Sparkle animation */
+.sparkle {
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 5px #ffd700; }
+    to { text-shadow: 0 0 20px #ffd700; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card sparkle">
+    <h1>🎉 Happy New Year 🎉</h1>
+    <div class="year">2026</div>
+    <p>
+        May this year bring you joy, success,
+        good health, and beautiful moments ✨
+    </p>
+    <div class="tap">🔊 Tap anywhere for music</div>
+</div>
+
+<!-- Lightweight Music -->
+<audio id="music" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/10/30/audio_0f1c1f4c8a.mp3?filename=new-year-ambient-124994.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener("click", () => {
+    const m = document.getElementById("music");
+    if (m.paused) m.play();
+}, { once: true });
+</script>
+
+</body>
+</html>
